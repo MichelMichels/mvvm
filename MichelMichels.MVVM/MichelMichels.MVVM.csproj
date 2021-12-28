@@ -1,10 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Authors>Michel Michels</Authors>
+	<Version>1.0.0</Version>
+	<Description>Boilerplate classes for MVVM</Description>
+	<PackageProjectUrl>https://github.com/MichelMichels/MVVM</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/MichelMichels/MVVM</RepositoryUrl>
+	<PackageTags>mvvm</PackageTags>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
 </Project>
