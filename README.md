@@ -6,7 +6,7 @@ C# .NET standard library with MVVM boilerplate classes.
 
 ## Getting Started
 
-Clone the repository or get the NuGet package from [NuGet.org](https://www.nuget.org/packages/CliSharp/).
+Clone the repository or get the NuGet package from [NuGet.org](https://www.nuget.org/packages/MichelMichels.MVVM/).
 
 ## Contents
 
