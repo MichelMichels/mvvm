@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
 using System.Windows.Input;
 
 namespace MichelMichels.MVVM
@@ -17,16 +15,13 @@ namespace MichelMichels.MVVM
             _canExecute = canExecute;
         }
 
+        public event EventHandler? CanExecuteChanged;
+
         [DebuggerStepThrough]
         public bool CanExecute(object parameter)
         {
             return _canExecute == null ? true : _canExecute();
-        }
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
+        }        
         public void Execute(object parameter)
         {
             _execute();
@@ -38,7 +33,6 @@ namespace MichelMichels.MVVM
         // Fields
         readonly Action<T> _execute;
         readonly Predicate<T> _canExecute;
-        private ICommand editDeliveryAddressCommand;
 
         // Constructors
         public RelayCommand(Action<T> execute)
@@ -47,25 +41,18 @@ namespace MichelMichels.MVVM
         }
         public RelayCommand(Action<T> execute, Predicate<T> canExecute)
         {
-            _execute = execute ?? throw new ArgumentNullException("execute");
+            _execute = execute ?? throw new ArgumentNullException(nameof(execute));
             _canExecute = canExecute;
-        }
-
-        public RelayCommand(ICommand editDeliveryAddressCommand)
-        {
-            this.editDeliveryAddressCommand = editDeliveryAddressCommand;
-        }
+        }       
 
         [DebuggerStepThrough]
         public bool CanExecute(object parameter)
         {
             return _canExecute == null || !(parameter is T) ? true : _canExecute((T)parameter);
         }
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
+
+        public event EventHandler? CanExecuteChanged;
+
         public void Execute(object parameter)
         {
             if (parameter is T cast)
