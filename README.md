@@ -2,7 +2,7 @@
 
 # MichelMichels.MVVM
 
-C# .NET standard library with MVVM boilerplate classes.
+C# .NET 6 library with MVVM boilerplate classes.
 
 ## Getting Started
 
