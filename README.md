@@ -1,3 +1,7 @@
+:warning: This repository is deprecated. Don't use this library, use [CommunityToolkit.Mvvm](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/) instead.
+
+<hr />
+
 [![Nuget](https://img.shields.io/nuget/v/MichelMichels.MVVM)](https://www.nuget.org/packages/MichelMichels.MVVM/)
 
 # MichelMichels.MVVM
