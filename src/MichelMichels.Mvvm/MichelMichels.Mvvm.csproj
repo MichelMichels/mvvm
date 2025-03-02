@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>Michel Michels</Authors>
+		<Description>Boilerplate classes for MVVM</Description>
+		<PackageProjectUrl>https://github.com/MichelMichels/Mvvm</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/MichelMichels/Mvvm</RepositoryUrl>
+		<PackageTags>mvvm</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Title>MichelMichels.Mvvm</Title>
+  </PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\MichelMichels.Mvvm.Core\MichelMichels.Mvvm.Core.csproj" />
+	</ItemGroup>
+
+</Project>

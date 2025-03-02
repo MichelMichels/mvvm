@@ -1,19 +1,28 @@
-:warning: This repository is deprecated. Don't use this library, use [CommunityToolkit.Mvvm](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/) instead.
+[![MichelMichels.Mvvm](https://img.shields.io/nuget/v/MichelMichels.Mvvm)](https://www.nuget.org/packages/MichelMichels.Mvvm/)
 
-<hr />
+# MichelMichels.Mvvm
 
-[![Nuget](https://img.shields.io/nuget/v/MichelMichels.MVVM)](https://www.nuget.org/packages/MichelMichels.MVVM/)
-
-# MichelMichels.MVVM
-
-C# .NET 6 library with MVVM boilerplate classes.
+C# .NET library with MVVM boilerplate classes for ViewModels and Views on multiple platforms.
 
 ## Getting Started
 
-Clone the repository or get the NuGet package from [NuGet.org](https://www.nuget.org/packages/MichelMichels.MVVM/).
+This library is fully dependent on `CommunityToolkit.Mvvm`. It aims to be an easy drop in to connect events from Views to your ViewModels without doing the wire-up yourself.
 
-## Contents
+The library is split into 2 core assemblies: 
+- `MichelMichels.Mvvm.Core`: Contains the interface `IViewModelBase`
+- `MichelMichels.Mvvm`: Contains the implementation `ViewModelBase`
 
-* BasePropertyChanged: implementation the INotifyPropertyChanged
-* BaseValidatedPropertyChanged: extension of the BasePropertyChanged class with implementation of the IDataErrorInfo interface
-* RelayCommand: implementation of the ICommand interface
+If you want to do the wire-up yourself, all you need to know is the `IViewModelBase` interface:
+
+```csharp
+IAsyncRelayCommand LoadedCommand { get; }
+IAsyncRelayCommand AppearingCommand { get; }
+IAsyncRelayCommand DisappearingCommand { get; }
+```
+
+I also provide following basic wire-ups:
+
+|Platform|Nuget|
+|---|---|
+|`MichelMichels.Mvvm.Maui`| [![Nuget](https://img.shields.io/nuget/v/MichelMichels.Mvvm.Maui)](https://www.nuget.org/packages/MichelMichels.Mvvm.Maui/) |
+|`MichelMichels.Mvvm.Wpf`| [![Nuget](https://img.shields.io/nuget/v/MichelMichels.Mvvm.Wpf)](https://www.nuget.org/packages/MichelMichels.Mvvm.Wpf/) |

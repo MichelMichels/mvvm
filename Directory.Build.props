@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <GlobalVersion>8.0.0</GlobalVersion>
+    <Version>$(GlobalVersion)</Version>
+    <FileVersion>$(GlobalVersion)</FileVersion>
+    <InformationalVersion>$(GlobalVersion)</InformationalVersion>
+    <Authors>Michel Michels</Authors>
+  </PropertyGroup>
+</Project>
