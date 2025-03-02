@@ -18,6 +18,9 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
 
+      - name: Workload restore for MAUI
+        run: dotnet workload restore 
+
       - name: Install dependencies
         run: dotnet restore
 

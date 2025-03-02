@@ -6,8 +6,8 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Michel Michels</Authors>
 		<Description>Boilerplate classes for MVVM</Description>
-		<PackageProjectUrl>https://github.com/MichelMichels/Mvvm</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/MichelMichels/Mvvm</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/MichelMichels/mvvm</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/MichelMichels/mvvm</RepositoryUrl>
 		<PackageTags>mvvm</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>

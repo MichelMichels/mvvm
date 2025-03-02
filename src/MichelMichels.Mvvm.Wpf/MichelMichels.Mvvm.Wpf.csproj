@@ -1,14 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Michel Michels</Authors>
+    <Description>Boilerplate classes for MVVM in WPF</Description>
+    <PackageProjectUrl>https://github.com/MichelMichels/mvvm</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MichelMichels/mvvm</RepositoryUrl>
+    <PackageTags>mvvm wpf</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Title>MichelMichels.Mvvm.Wpf</Title>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MichelMichels.Mvvm.Core\MichelMichels.Mvvm.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
