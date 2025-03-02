@@ -1,4 +1,4 @@
-[![MichelMichels.Mvvm](https://img.shields.io/nuget/v/MichelMichels.Mvvm)](https://www.nuget.org/packages/MichelMichels.Mvvm/)
+[![MichelMichels.Mvvm](https://img.shields.io/nuget/v/MichelMichels.Mvvm)](https://www.nuget.org/packages/MichelMichels.Mvvm/) [![build and test](https://github.com/MichelMichels/mvvm/actions/workflows/dotnet.yml/badge.svg)](https://github.com/MichelMichels/mvvm/actions/workflows/dotnet.yml)
 
 # MichelMichels.Mvvm
 
